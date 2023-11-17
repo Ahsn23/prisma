@@ -1,9 +1,6 @@
 const router = require('express').Router();
 const productController = require('../controller/products.controller');
 
-router.get('/', async (req, res, next) => {
-  res.send({ message: 'Ok api is working 🚀' });
-});
 
 router.get('/products', productController.getProducts);
 

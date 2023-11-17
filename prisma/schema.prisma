@@ -24,3 +24,9 @@ model Category {
   name     String    @unique
   products Product[]
 }
+
+
+model Car {
+  id       Int       @id @default(autoincrement())
+  name     String    @unique
+}
